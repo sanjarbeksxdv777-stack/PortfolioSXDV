@@ -1,7 +1,6 @@
-// Updated to remove missing vite/client types and add process.env typing for API Key access
-declare const process: {
-  env: {
+declare namespace NodeJS {
+  interface ProcessEnv {
     API_KEY: string;
     [key: string]: any;
   }
-};
+}

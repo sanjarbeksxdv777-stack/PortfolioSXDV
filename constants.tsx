@@ -16,31 +16,26 @@ import React from 'react';
 // ⚙️ TIZIM SOZLAMALARI VA MA'LUMOTLARNI O'ZGARTIRISH (BOSHQARUV PANELI)
 // =========================================================================
 
-/**
- * 📸 RASMLARNI QANDAY O'ZGARTIRISH MUMKIN?
- * 1. Internetdagi rasm linkini qo'yishingiz mumkin (https://...).
- * 2. Yoki o'z rasmingizni yuklash uchun:
- *    - Loyiha papkasi ichida 'assets' nomli papka oching.
- *    - Rasmingizni o'sha yerga tashlang (masalan: men.jpg).
- *    - Pastdagi heroImage qismiga: "./assets/men.jpg" deb yozing.
- */
-
 export const PROFILE = {
   name: "Sanjarbek Otabekov",
   role: "Senior Full Stack Dasturchi",
   
-  // 🖼 ASOSIY RASM (O'zingizning rasmingizni shu yerga qo'ying)
+  // 🖼 ASOSIY RASM (O'ZGARTIRISH YO'RIQNOMASI):
+  // 1. O'z rasmingizni loyihaning "public" papkasiga tashlang (masalan: men.jpg).
+  // 2. Pastdagi qatorga rasm nomini yozing. Masalan: "/men.jpg"
+  // Agar internetdan qo'ymoqchi bo'lsangiz, to'liq linkni yozing.
+  
   heroImage: "men.jpg", 
   
-  // 📄 CV (RESUME) FAYLI LINKI
-  // Agar PDF faylingiz bo'lsa, uni ham 'assets' papkasiga solib, "./assets/resume.pdf" deb yozing.
+  // 📄 CV (RESUME) FAYLI:
+  // PDF faylingizni ham "public" papkasiga tashlang va nomini yozing (masalan: "/resume.pdf").
   resumeUrl: "#", 
   
   // 📍 SHAXSIY MA'LUMOTLAR
   location: "Toshkent, O'zbekiston",
   email: "sanjarbek@example.com",
   phone: "+998 90 123 45 67",
-  status: "Band", // Yoki "Band", "Loyihalar olmoqda"
+  status: "Ishga tayyor", // Yoki "Band", "Loyihalar olmoqda"
   
   // 📝 QISQA TA'RIF (Sayt boshida chiqadi)
   aboutShort: "Men biznesingizni raqamli dunyoda yuksaltirish uchun xavfsiz, tezkor va zamonaviy dasturiy yechimlar yarataman.",
